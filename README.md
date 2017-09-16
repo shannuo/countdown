@@ -4,7 +4,7 @@
 
 ### 在线演示地址
 
-[Countdown Button](http://dengshushan.com/tryFe/countdown/bulid)
+[Countdown Button](http://dengshushan.com/countdown/build/)
 
 预览:
 
@@ -108,7 +108,7 @@ A React countdown component.
 
 ### Online Demo
 
-[Countdown Button](http://dengshushan.com/tryFe/countdown/bulid)
+[Countdown Button](http://dengshushan.com/countdown/build/)
 
 Preview:
 
