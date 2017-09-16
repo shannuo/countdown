@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
 	  super(props)
 	  this.state = {
-		  nums:this.props.init.nums,									//倒计时时间（s）
+		  nums:this.props.init.nums,									// 倒计时时间（s）
 		  phone:'',														// 手机号码
 		  code:'',														// 验证码
 		  tip:'',														// 提示信息
@@ -17,6 +17,7 @@ class App extends Component {
 		  class:'disable',												// 倒计时按钮样式(disable:不可发送,able:可发送,sending:倒计时中)
 		  status:'disable',												// 倒计时按钮状态(disable:不可发送,able:可发送,sending:倒计时中)
 		  login:'disable',												// 登陆按钮样式(disable:不可登录,able:可登陆）
+		  popClass:'pop'												// 弹出框样式
 	  }
   }
   // 传递color属性给子孙组件
@@ -224,10 +225,10 @@ class App extends Component {
 	  	this.setState({
 		  tips:this.props.init.loginError,
 		  class1:'',
-		  class2:''
+		  class2:'',
+		  popClass:'pop appear red'
 		});
-		this.refs.pop.className += ' appear red'; 
-		setTimeout(()=>{this.refs.pop.className = 'pop';},1000);
+		setTimeout(()=>{this.setState({popClass:'pop'});},1000);
 	  }
 	  else if(!this.state.code)
 	  	this.setState({
@@ -245,10 +246,10 @@ class App extends Component {
 		this.setState({
 		  tips:this.props.init.loginSuccess,
 		  class1:'',
-		  class2:''
+		  class2:'',
+		  popClass:'pop appear success'
 		});
-	  	this.refs.pop.className += ' appear success';
-		setTimeout(()=>{this.refs.pop.className = 'pop';},1000); 
+		setTimeout(()=>{this.setState({popClass:'pop'});},1000); 
 		this.resetButton();
 	  }
   }
@@ -261,7 +262,7 @@ class App extends Component {
 	  const { iconClass, class1, class2, code, tips, countdown, login , phone } = this.state;
     return (
 		<div className="father">
-			<div className="pop" ref="pop" >
+			<div className={this.state.popClass} >
 			  <p>{tips}</p>
 			</div>
 			<div className="box">
