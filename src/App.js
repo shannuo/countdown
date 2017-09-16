@@ -269,14 +269,14 @@ class App extends Component {
 			  <h1 className="title">验证码登录</h1>
 			  <div className="input-group input-group-lg input-css">
 				<span className={iconClass}></span>
-				<input type="text" id="phone" name="phone" className="form-control " placeholder="请输入手机号" value={phone} onChange={this.handlePhone} onFocus={this.handleHide} />
+				<input type="text" id="phone" name="phone" className="form-control " placeholder="手机号" value={phone} onChange={this.handlePhone} onFocus={this.handleHide} />
 			  </div>
 			  <div className={"tips shake clearfix " +  class1}>
 				<span className="triangle"></span>
 				<div className="article">{tips}</div>
 			  </div>
 			  <div className="input-group input-group-lg input-css">
-				<input type="text" name="code" className="form-control" placeholder="请输入验证码" value={code} onFocus={this.handleHide} onChange={this.handleCode} />
+				<input type="text" name="code" className="form-control" placeholder="验证码" value={code} onFocus={this.handleHide} onChange={this.handleCode} />
 				<span id="sendCode" className={"input-group-addon  " + this.state.class} onClick={this.handleSend}>{countdown}</span>
 			  </div>
 			  <div className={"tips second clearfix " + class2}>

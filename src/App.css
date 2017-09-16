@@ -3,19 +3,8 @@
 	margin:0;
 	padding:0;
 }
-/**盒子**/
-.box{
-	width:500px;
-	height:350px;
-	padding:20px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin:-200px 0 0 -250px;
-	border:5px solid #F8F8F8;
-	box-shadow:5px 5px 50px #E7E7E7;
-	background-color:rgb(255,255,255);
-	color:rgb(107,107,107);
+.father{
+	overflow:hidden;
 }
 /**标题**/
 .title{
@@ -146,4 +135,53 @@
 }
 .success{
 	color:rgb(0,223,85);
+}
+@media screen and (max-width : 1980px){
+/**盒子**/
+.box{
+	width:500px;
+	height:350px;
+	padding:20px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-200px 0 0 -250px;
+	border:5px solid #F8F8F8;
+	box-shadow:5px 5px 50px #E7E7E7;
+	background-color:rgb(255,255,255);
+	color:rgb(107,107,107);
+}
+}
+@media screen and (max-width : 780px){
+/**盒子**/
+.box{
+	position:static;
+	width:90%;
+	height:100%;
+	margin:0 auto;
+	border:hidden;
+	box-shadow:none;
+	overflow:hidden;
+}
+/**标题**/
+.title{
+	font-size:20px;
+	margin-bottom:30px;
+}
+/**提示框**/
+.tips,sencond{
+	width:280px;
+	height:45px;
+	border-radius:10px;
+	position:absolute;
+	left:10%;
+	top:40px;
+	z-index:100;
+	background-color:rgba(246,246,246,1);
+	display:none;
+	font-weight:bold;
+}
+.triangle{
+    display:none;
+}
 }
