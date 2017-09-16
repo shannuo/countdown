@@ -1,0 +1,149 @@
+/**初始化CSS**/
+*{
+	margin:0;
+	padding:0;
+}
+/**盒子**/
+.box{
+	width:500px;
+	height:350px;
+	padding:20px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-200px 0 0 -250px;
+	border:5px solid #F8F8F8;
+	box-shadow:5px 5px 50px #E7E7E7;
+	background-color:rgb(255,255,255);
+	color:rgb(107,107,107);
+}
+/**标题**/
+.title{
+	font-size:30px;
+	margin-bottom:30px;
+}
+/**输入框**/
+.input-css{
+	margin:20px 0 20px 0;
+}
+/**提示框**/
+.tips{
+	width:280px;
+	height:45px;
+	border-radius:10px;
+	position:absolute;
+	left:-280px;
+	top:105px;
+	background-color:rgba(246,246,246,1);
+	display:none;
+	font-weight:bold;
+}
+.boost{
+	animation:boost linear 0.4s;
+	color:rgb(0,223,85);
+}
+.shake{
+	animation:shake linear 1s;
+	color:red;
+}
+.red{
+	color:red;
+}
+@keyframes boost{
+	0%,39%,100%{ 
+		opacity:0; 
+	}
+  	40%{ 
+		opacity:1;
+	}
+}
+@keyframes shake{
+	0%{
+        transform:scale(1);
+        transform:scale(1)
+    }
+
+    10%,20%{
+        transform:scale(0.9) rotate(-3deg);
+        transform:scale(0.9) rotate(-3deg)
+    }
+
+    30%,50%,70%,90%{
+        transform:scale(1.1) rotate(3deg);
+        transform:scale(1.1) rotate(3deg)
+    }
+
+    40%,60%,80%{
+        transform:scale(1.1) rotate(-3deg);
+        transform:scale(1.1) rotate(-3deg)
+    }
+
+    100%{
+        transform:scale(1) rotate(0);
+        transform:scale(1) rotate(0)
+    }
+}
+.second{
+	top:170px;
+}
+.show{
+	display:block;
+}
+.triangle{
+    position:absolute;
+    top:50%;
+    margin-top:-8px;
+    right:-8px;
+    display:block;
+    width:0;
+    height:0;
+    overflow:hidden;
+    line-height:0;
+    font-size:0;
+    border-bottom:8px solid #FFF;
+    border-top:8px solid #FFF;
+    border-right:none;
+    border-left:8px solid rgba(246,246,246,0.8);
+}
+.article{
+	text-align:center;
+	padding-top:10px;
+}
+/**倒计时按钮**/
+.disable,.disable:hover{
+	cursor:not-allowed;
+	color:rgb(213,213,213);
+}
+.sending{
+	cursor:wait;
+}
+.able{
+	cursor:pointer;
+	color:rgb(3,3,3);
+}
+/*弹出框*/
+.pop{
+	display:block;
+	z-index:10;
+	width:300px;  
+    height:175px;  
+    position:absolute;  
+    left:50%;  
+    top:50%;  
+    margin:-160px 0 0 -150px;
+	background-color:#FFF;
+	opacity:0.8;
+	border:1px solid #F8F8F8;
+	text-align:center;
+	display:none;
+	}
+.pop p{
+	margin:70px 50px 60px 50px;
+	font-size:28px;
+}
+.appear{
+	display:block;
+}
+.success{
+	color:rgb(0,223,85);
+}
