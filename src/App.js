@@ -243,15 +243,6 @@ class App extends Component {
 			  <div className="form-btn input-group-lg">
 				  <input type="button" id="login" className={"form-control btn-success " + login} value="登录" onClick={this.handleLogin} />
 			  </div>
-			  <Countdown 
-	ref="countdown" 
-	status='sending' 
-	nums='60' 
-	sendCode={function(){}} 
-	callback={function(){}} 
-	disableClick='请正确填写手机号' 
-	sendingClick='正在发送，请耐心等待' 
-/> 
 			</div>
 		</div>
     );
