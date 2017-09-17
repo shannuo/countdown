@@ -26,20 +26,15 @@ class App extends Component {
   }
   handlePhone=(event)=>{
 	  // 倒计时按钮处于倒计时未结束状态时手机号不能修改
+	  var phone = event.target.value;
 	  if(this.state.status==='sending')
 	  	return false;
 	  // 同步input值
 	  this.setState({
-	  	phone:event.target.value
+	  	phone:phone
 	  });
 	  // 验证手机号
-	  this.testPhone(event);
-	  
-  }
-  // 手机号验证
-  testPhone(event){
-	  var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
-	  if(myreg.test(event.target.value)){ 
+	  if(this.testPhone(phone)){ 
 		  this.setState({
 			status:'able',
 			class:'able'	 
@@ -50,7 +45,15 @@ class App extends Component {
 			status:'disable',
 			class:'disable'		 
 		  });
-	  } 
+	  }     
+  }
+  // 手机号验证
+  testPhone(phone){
+	  var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
+	  if(myreg.test(phone))
+	  	return true;
+	  else
+	  	return false;
   }
   handleCode=(event)=>{
 	  this.setState({
@@ -259,7 +262,7 @@ class App extends Component {
 	  return myreg.test(this.state.code);
   }
   render() {
-	  const { iconClass, class1, class2, code, tips, countdown, login , phone } = this.state;
+	const { iconClass, class1, class2, code, tips, countdown, login , phone } = this.state;
     return (
 		<div className="father">
 			<div className={this.state.popClass} >
