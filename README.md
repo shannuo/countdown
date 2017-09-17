@@ -10,7 +10,7 @@
 
 ![preview-img](http://7xle3b.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-09-16%20%E4%B8%8B%E5%8D%887.20.20.png)
 
-Demo 演示:
+Demo 演示:（多出的两个小方条和花掉的鼠标是录制的原因）
 
 ![preview](http://7xle3b.com1.z0.glb.clouddn.com/video.gif)
 
@@ -203,7 +203,7 @@ sendingClick：类型为字符串的提示信息，这条信息将用于用户�
 Email: dengshushan@qq.com
 
 
-# English Version
+# English Version（incomplete）
 
 ## Countdown Component
 ### Description
