@@ -2,6 +2,8 @@
 
 一个倒计时短信验证码登录的React组件。
 
+具体实现：[点击这里查看记录实现过程的博客](http://dengshushan.com/Login-Component/)
+
 ### 在线演示地址
 
 [Countdown Button](http://dengshushan.com/countdown/build/)
