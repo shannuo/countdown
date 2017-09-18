@@ -37,14 +37,12 @@ class App extends Component {
 	  // 验证手机号
 	  if(this.testPhone(phone)){ 
 		  this.setState({
-			status:'able',
-			class:'able'	 
+			status:'able'	 
 		  });
 	  }
 	  else{
 		  this.setState({
-			status:'disable',
-			class:'disable'		 
+			status:'disable'	 
 		  });
 	  }     
   }

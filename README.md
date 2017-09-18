@@ -82,9 +82,9 @@ Demo 演示:（多出的两个小方条和花掉的鼠标是录制的原因）
 ```javascript
     	
 < App init = {	nums:20,												// 倒计时时间
-		testError:'手机号填写错误！',									// 手机号检测不通过
+		testError:'手机号填写错误！',										// 手机号检测不通过
 		codeError:'验证码发送失败！',									// 验证码发送失败
-		codeSuccess:'验证码发送成功啦，看到就在这填写哦~',			// 验证码发送成功
+		codeSuccess:'验证码发送成功啦，看到就在这填写哦~',				// 验证码发送成功
 		disableClick:'先把手机号填正确好吗0.0',							// 手机号未通过点击发送验证码
 		sendingClick:'再等等哦，很快就能收到了~',						// 倒计时未结束点击发送验证码		
 		codeNullError:'验证码不能为空！',								// 未填写验证码登录
@@ -277,9 +277,9 @@ Add in the place you need the button：
 ```javascript
     	
 < App init = {	nums:20,												// 倒计时时间
-		testError:'手机号填写错误！',									// 手机号检测不通过
+		testError:'手机号填写错误！',										// 手机号检测不通过
 		codeError:'验证码发送失败！',									// 验证码发送失败
-		codeSuccess:'验证码发送成功啦，看到就在这填写哦~',			// 验证码发送成功
+		codeSuccess:'验证码发送成功啦，看到就在这填写哦~',				// 验证码发送成功
 		disableClick:'先把手机号填正确好吗0.0',							// 手机号未通过点击发送验证码
 		sendingClick:'再等等哦，很快就能收到了~',						// 倒计时未结束点击发送验证码		
 		codeNullError:'验证码不能为空！',								// 未填写验证码登录
